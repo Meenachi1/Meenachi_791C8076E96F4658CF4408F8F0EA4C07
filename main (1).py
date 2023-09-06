@@ -1,0 +1,11 @@
+#implement a recursive function to calculate the factorial of a given number
+def fact_rec(a):
+  if a==0 or a==1:
+   return 1
+  else:
+   return a*fact_rec(a-1)
+
+number=int(input("enter a value:"))
+res=fact_rec(number)
+
+print("the factorial of {} is {}.".format(number,res))
